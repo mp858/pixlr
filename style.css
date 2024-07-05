@@ -6,26 +6,22 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-Video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
 body{
+  background-image:url("./bg.jpg");
+  background-size: cover;
+  background-position:center;
   display: flex;
   padding: 10px;
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
-  background: #8c52ff;
+  justify-content:flex-start;
+  /* background: #8c52ff; */
+ 
 }
 .container{
-  width: 850px;
+  width: 650px;
   padding: 30px 35px 35px;
-  background: #fff;
+  background: #ffffffdb;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -35,7 +31,7 @@ body{
   opacity: 0.5;
   pointer-events: none;
 }
-.container h2{
+ h2{
   margin-top: -8px;
   font-size: 30px;
   font-weight: 1000;
@@ -161,8 +157,9 @@ body{
 }
 
 @media screen and (max-width: 760px) {
-  video{
-    visibility: hidden;
+  body{
+    /* background:#8c52ff ; */
+    background-image:url("bg-small3.jpg");
   }
   .container{
     width: 80vw;
@@ -187,10 +184,18 @@ body{
     margin: 0 0 15px;
   }
 }
-
+@media only screen and (max-width: 1000px) {
+  body{
+    /* background:#8c52ff ; */
+    background-image:url("bg-small3.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+}
 @media only screen and (max-width: 700px) {
-  video{
-    visibility: hidden;
+  body{
+    /* background:#8c52ff ; */
+    background-image:url("bg-small3.jpg");
   }
   .container{
     width: 80vw;
